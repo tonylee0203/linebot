@@ -46,7 +46,7 @@ def callback():
 @handler.add(MessageEvent, message=TextMessageContent)
 def handle_message(event):
     user_msg = event.message.text
-    reply_msg = '你好'
+    reply_msg = '你好,我是蘋果哥'
 
     if user_msg in [ 'hi','Hi','你好','您好','hello','Hello']:
         reply_msg = '您好'
